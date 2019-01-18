@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>VR online game</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="floor" src="https://cdn.glitch.com/a336f9ee-6a9f-4553-a788-94d5ce8c04c9%2Fstone-ground-pavement-texture-thumb29.jpg.png?1525803644540">
+        <img id="sky" src="https://cdn.glitch.com/a336f9ee-6a9f-4553-a788-94d5ce8c04c9%2Fhemisunset01.jpg?1525804715096">
+      </a-assets>
+      <a-cylinder
+        radius="60"
+        height="0.1"
+        src="#floor"
+        position="15 0 15"
+      >
+      </a-cylinder>
+      <a-camera
+        position="15 6 40"
+        fov="25"
+      >
+        <a-cursor></a-cursor>
+      </a-camera>
+      <a-sky radius="60" src="#sky">
+      </a-sky>
+    </a-scene>
+    <script src="game.js">
+    </script>
+  </body>
+</html>
